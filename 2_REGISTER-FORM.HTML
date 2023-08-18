@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .fullContent {
+            display: flex;
+            background-color: beige;
+            padding-bottom: 5%;
+
+
+
+        }
+
+        .leftContent {
+            display: flex;
+            flex: 40%;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5px;
+            margin-left: 10%;
+            width: 500px;
+
+        }
+
+        .rightContent {
+            display: flex;
+            flex: 40%;
+            flex-direction: column;
+            margin-right: 10%;
+            padding-left: 10px;
+            padding: 5px;
+
+        }
+
+        .inputBox {
+            width: 35%;
+            height: 50px;
+            position: relative;
+            /* NOTE = IF we need to give text box any other kind of input in front of lable data like in this form so we give that lable anf input tag in the seprate div and then set the style as we need  */
+            display: inline-block;
+            text-align: center;
+        }
+
+        .inputBox2 {
+            width: 45%;
+            height: 65px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .lable {
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <script>    
+        function validate() {
+            let name = document.getElementsByClassName("fullContent")["name"].value;
+            let email = document.getElementsByClassName("fullContent")["email"].value;
+
+            if (name === " ") {
+                console.log("working")
+                return false;
+            }
+
+            if (!email) {
+                alert('Please enter a valid email');
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align="center" style="margin-top: 5px;">REGISTER-FORM</h1><br><br>
+    <form class ="fullContent" onsubmit=" return validate()">
+
+        <div class="leftContent">
+
+            <div>      
+                <label
+                    class="lable">Prefix</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="inputBox" type="text">
+            </div><br><br>
+
+            <div>
+                <label  class="name">First Name</label>&nbsp;&nbsp;&nbsp;
+                <input class="inputBox" id="name" name="name" type="text" placeholder="First-Name">&nbsp;&nbsp;
+                <input class="inputBox" name="name" type="text" placeholder="Last-Name">
+            </div><br><br>
+
+            <div> <label
+                    class="lable">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="inputBox" name="email" type="email" placeholder="example@gmail.com">
+            </div><br><br>
+
+            <div>
+                <label class="lable">Work-Phone</label>
+                <input class="inputBox" type="text">
+            </div><br><br>
+
+            <div>
+                <label class="lable">Cell-Phone</label>&nbsp;&nbsp;&nbsp;
+                <input class="inputBox" type="">
+            </div><br><br>
+
+            <div>
+                <label class="lable">Job-title</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="inputBox" type="text">
+            </div><br><br>
+
+            <div>
+                <lable class="lable">Company</lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="inputBox" type="text">
+            </div><br><br>
+
+            <div>
+                <lable class="lable">Full-Business-Address</lable>
+                <input class="inputBox" type="text">
+            </div><br><br>
+
+            <div>
+                <label class="lable">Company-Webiste</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="inputBox" type="text">
+            </div><br><br>
+            <div style="padding-left:39% ;">
+                <button type="submit" style="height: 60px; width: 170px;" value="submit" >Submit</button>
+            </div>
+        </div><br>
+
+        <div class="rightContent">
+  
+
+            <label class="lable">Company-Description</label><br>
+            <input class="inputBox2" type="text"><br><br>
+            <label class="lable">Product/Services to Excibit</label><br>
+            <input class="inputBox2" type="text"><br><br>
+            <h2>What type of booth do you like?</h2><br>
+            <div>
+                <label class="lable">In person booth
+                    only</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" style="width: 25px ; height: 25px;" name="booth">
+            </div>
+            <div><label  class="lable">Virtual booth
+                    only</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" style="width: 35px ; height: 25px;" name="booth">
+            </div>
+            <div> <label class="lable">Virtual & in-Person booth</label>&nbsp;&nbsp;&nbsp;
+                <input type="radio" style="width: 25px ; height: 25px;" name="booth">
+            </div><br><br>
+            <label class="lable">List your staff (name,email,phone)</label><br>
+            <input class="inputBox2" type="text"><br><br>
+            <label class="lable">Competetor you dont want to be near</label><br>
+            <input class="inputBox2" type="text"><br><br><br><br><br><br>
+
+            <div style="padding: right 40%;">
+                <button type="reset" style="height: 60px; width: 170px; margin-bottom: 20px;" onclick="Lock">reset</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>

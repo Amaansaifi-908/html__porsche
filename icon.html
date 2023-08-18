@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<style>
+   .material-symbols-outlined{
+        font-size: 100px;
+    }
+    body{
+
+        background-color: brown;
+    }
+         @media screen and (max-width:200px){
+            body{
+                background-color: aqua;
+            }
+         }
+
+         .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+</style>
+<body>
+    <span  class="material-symbols-outlined">
+        home
+        </span>
+         <img src="arrow_back_FILL0_wght400_GRAD0_opsz48.png" alt=""> <!--downloaded image -->
+
+         <div class="dropdown">
+            <button class="dropbtn">Hover me</button>
+            <div class="dropdown-content">
+              <a href="#">Option 1</a>
+              <a href="#">Option 2</a>
+              <a href="#">Option 3</a>
+            </div>
+          </div>
+          
+</body>
+</html>

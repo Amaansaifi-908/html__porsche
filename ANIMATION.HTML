@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        * {
+            margin: auto;
+            padding: 0;
+        }
+        .div {
+            height: 500px;
+            width: 1000px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .section {
+            height: 500px;
+            width: 5000px;
+            position: relative;
+            animation-name: animatE;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-play-state: running;
+        }
+
+        .image {
+            width: 1000px;
+            height: 500px;
+            float: left;
+            position: relative;
+        }
+
+        @keyframes animatE {
+            0% { left: 0px; }
+            20% { left: 0px; }
+            25% { left: -1000px; }
+            40% { left: -1000px; }
+            45% { left: -2000px; }
+            60% { left: -2000px; }
+            65% { left: -3000px; }
+            80% { left: -3000px; }
+            85% { left:- 4000px; }
+           100% {left:-4000px;}
+        }
+
+        .flexcontainer{
+            display: flex;
+            border: 2px solid grey;
+            height: 300px;
+            justify-content:center;
+         
+        }
+        .flexItem{
+            height: 122px;
+            width: 122px;
+            background-color: chocolate;
+            margin: 12px;
+        }
+        nav{
+            list-style : none ;
+            height: 70px;
+            width: 100%;
+            background-color:beige;
+
+        }
+        ul li a {
+            text-decoration:none;
+            align-items: center ;
+
+        }
+        nav ul{
+            text-align: center ;
+            
+        }
+        nav ul li {
+            height: 60px;
+            width: 20%;
+            float:left;
+            list-style: none;
+            margin-top: 20px;
+            
+        }
+        nav ul li ul li{
+            display: block;
+            height: 50px;
+            width: 200px;
+            border: solid black 1px;
+           display: block;
+            
+        }
+
+        nav ul li ul{
+            
+            display: none;
+            margin-left: 70px;
+        }
+        nav ul li:hover ul{
+            display:block;
+            
+
+        }
+        nav ul li:hover{
+            background-color: aqua;
+        }
+        material-symbols-outlined{
+            font-size: 100px;
+        }
+
+        .images:hover{
+           width: 200px ;
+           height: 300px;
+        
+        
+        }
+
+.transform{
+    transform: rotateY('30deg');
+    transition: 30deg;
+    transform: rotateX(40deg);
+}
+.transform:hover{
+    width: 200px;
+    height: 150px;
+
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> hello 
+                <ul>
+                    <li><a href="">hello1 </a></li>
+                    <li><a href="">hello2 </a></li>
+                    <li><a href="">hello3</a></li>
+                    <li><a href="">hello4</a></li>
+                </ul>
+             </li>                              <!-- hover par li open hone kai baad ek option tak to rukte hai jese hi second option par jao its vanish -->
+            <li><a href="">hello </a></li>
+            <li><a href="">hello </a></li>
+            <li><a href="">hello </a></li>
+            <li><a href="">hello </a></li>
+        </ul>
+    </nav>
+    <div class="div">
+        <section class="section">
+           
+              
+            <img  src="https://www.w3docs.com/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" height="500px" width="1000px" alt="">
+            <img  src="https://www.w3docs.com/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" height="500px" width="1000px" alt="">
+            <img  src="https://www.w3docs.com/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" height="500px" width="1000px" alt="">
+            <img  src="https://www.w3docs.com/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" height="500px" width="1000px" alt="">
+        </section>
+    </div> <br>
+    <div class="flexcontainer" >
+        <div class="flexItem1"><img class="images" src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="" height="122px" width="122px"></div>
+        <div class="flexItem2">2</div>
+        <div class="flexItem">3</div>
+        <div class="flexItem">4</div>
+        <div class="flexItem">5</div>
+    </div>
+    <div>
+        
+        <map name="first"  >
+                <area shape="poly" coords="759,253,843,255,761,309,845,307" href="https://previews.123rf.com/images/miloushek/miloushek1011/miloushek101100013/8261073-computer-set.jpg" >
+        </map>
+
+    </div>
+
+
+
+    <span  class="material-symbols-outlined">
+        home
+        </span>
+        <video width="320" height="240" controls>
+            <source src="https://www.google.com/search?rlz=1C1GCEU_enIN1030IN1030&q=video+link&tbm=vid&sa=X&ved=2ahUKEwj-9_y1jJWAAxVWb94KHf9TDTsQ0pQJegQIDBAB&biw=1366&bih=695&dpr=1#fpstate=ive&vld=cid:94692100,vid:ebXngNnCQNQ" type="video/mp4">
+            <source src="https://www.google.com/search?rlz=1C1GCEU_enIN1030IN1030&q=video+link&tbm=vid&sa=X&ved=2ahUKEwj-9_y1jJWAAxVWb94KHf9TDTsQ0pQJegQIDBAB&biw=1366&bih=695&dpr=1#fpstate=ive&vld=cid:94692100,vid:ebXngNnCQNQ" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+
+          <video width="200px" height="100px" controls src=""><source href="" src="https://www.google.com/search?rlz=1C1GCEU_enIN1030IN1030&q=video+link&tbm=vid&sa=X&ved=2ahUKEwj-9_y1jJWAAxVWb94KHf9TDTsQ0pQJegQIDBAB&biw=1366&bih=695&dpr=1#fpstate=ive&vld=cid:94692100,vid:ebXngNnCQNQ"></video>
+        <div class="transform">
+
+        
+            <div><img class="images" src="https://www.w3schools.com/howto/img_nature_wide.jpg" width="50px" height="200px" usemap="#first" alt=""></div>
+            <div><img class="images" src="https://www.w3schools.com/howto/img_nature_wide.jpg" width="50px" height="200px" usemap="#first" alt=""></div>
+            <div><img class="images" src="https://www.w3schools.com/howto/img_nature_wide.jpg" width="50px" height="200px" usemap="#first" alt=""></div>
+       
+
+        </div>
+</body>
+</html>
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pc_layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mainContent {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            grid-template-rows: 30px 30px 45px 70px 70px 30px 70px 70px 70px 70px 30px 70px 70px;
+            grid-template-columns: 217px 365px 365px 365px 365px
+        }
+
+        .item1 {
+            background-color: red;
+            height: 100%;
+            width: 100%;
+            grid-column-start: 1;
+            grid-column-end: 6;
+
+
+        }
+
+        .item2 {
+            background-color: greenyellow;
+            height: 100%;
+            width: 100%;
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+
+        .item3 {
+            background-color: aqua;
+            height: 100%;
+            width: 100%;
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+
+        .item4 {
+            border: 1px solid black;
+            background-color: rgb(247, 246, 246);
+            height: 100%;
+            width: 100%;
+            grid-row-start: 4;
+            grid-row-end: 100;
+            margin-right: 4px;
+        }
+
+        .item5 {
+            background-color: rgb(0, 0, 0);
+            height: 100%;
+            width: 100%;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .item13 {
+
+            height: 100%;
+            width: 100%;
+            grid-column-start: 2;
+            grid-column-end: 6;
+
+        }
+
+        .item14 {
+            background-color: rgb(92, 0, 0);
+            height: 100%;
+            width: 100%;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .item15 {
+            background-color: rgb(255, 0, 234);
+            height: 100%;
+            width: 100%;
+        }
+
+        .div {
+            height: 25%;
+            display: inline;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContent">
+        <div class="item1">
+            <P> item1 paragraph</P>
+        </div>
+
+        <div class="item2">
+            <P> item2 paragraph</P>
+        </div>
+
+        <div class="item3">
+            <P> item3 paragraph</P>
+        </div>
+
+        <div class="item4" align="center">
+            <p style="font-size: large;">Quick Access</p><br>
+            <p style="font-size: large;">One-Drove personal</p><br><br>
+            <p style="font-size: large;">This Pc</p><br>
+            <p style="font-size: large;" style="font-size: larger;">3D Object</p><br>
+            <p style="font-size: large;">Desktop</p><br>
+            <p style="font-size: large;">Document</p><br>
+            <p style="font-size: large;">Download</p><br>
+            <p style="font-size: large;">Music</p><br>
+            <p style="font-size: large;">Picture</p><br>
+            <p style="font-size: large;">Videos</p><br>
+            <p style="font-size: large;">Videos</p><br>
+            <p style="font-size: large;">Loacl Disck(C:)</p><br>
+            <p style="font-size: large;">New Volume(D:)</p><br><br>
+            <p style="font-size: large;">Network</p><br>
+
+
+        </div>
+
+        <div class="item5">
+            <P> item5 paragraph</P>
+
+        </div>
+        <div class="item6">
+            <P> item6 paragraph</P>
+        </div>
+        <div class="item7">
+            <P> item7 paragraph</P>
+        </div>
+        <div class="item8">
+            <P> item8 paragraph</P>
+        </div>
+        <div class="item9">
+            <P> item9 paragraph</P>
+        </div>
+        <div class="item10">
+            <P> item10 paragraph</P>
+        </div>
+        <div class="item11">
+            <P> item11 paragraph</P>
+        </div>
+        <div class="item12">
+            <div style="justify-content: left; display:unset; position:absolute;"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTugbngy3EJUJNAomaaaL2IAFJCmj5ChYWtm_TtGfHeEaI56VC62DzucTm0jQtF8ZLHwdo&usqp=CAU"
+                    style="height: 70px; width: 60px;"></img></div>
+            <div><input type="text"
+                    style="position: relative; display: inline; align-items: center; justify-content: center;"></div>
+        </div>
+        <div class="item13">
+            <strong style="font-family: serif; font-size: larger;">Devices and Drives(12) </strong>
+        </div><br>
+
+        <div class="item14" align="grid-column-end">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjNEYUfvqqutAdcfMGThfF0McUEyH4yNfV-w&usqp=CAU"
+                style="height: 70px; width: 60px;"></img>
+            <div><input type="text" style=" margin-top: -59px; margin-left: 10PX; height: 18px; width: 16%; "></div>
+        </div>
+
+        <div class="item15">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTugbngy3EJUJNAomaaaL2IAFJCmj5ChYWtm_TtGfHeEaI56VC62DzucTm0jQtF8ZLHwdo&usqp=CAU"
+                style="height: 70px; width: 60px;"></img>
+            <p><input type="text"></p>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

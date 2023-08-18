@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .Header {
+            font-size: larger;
+            font-family: cursive, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            align-items: center;
+            height: 100px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .NavBar {
+            height: 75px;
+            display: flex;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+
+        .NavBar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: larger;
+            padding: 5px;
+            margin: 5px;
+            
+
+        }
+
+        .NavBar a:hover {
+            background-color: #726e6e;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+        }
+
+        .aboutContent {
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            flex: 15%;
+            width: 350px;
+            background-color: #f1f1f1;
+            position: relative;
+            padding: 20px;
+            justify-content: start;
+
+
+        }
+
+        .mainContent {
+            background-color: white;
+            flex: 70%;
+            padding: 20px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .mainImage {
+            height: 350px;
+            width: 700px;
+            margin: 10px;
+            border-style: double;
+        }
+
+        /* ----------------------------------SLIDE-SHOW-CSS-BELOW--------------------------------- */
+
+        .slideShow {
+            height: 500px;
+            width: 1000px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .section {
+            height: 500px;
+            width: 6500px;
+            position: relative;
+            animation: animatE 15s alternate infinite ease-in-out ;
+        }
+
+        .image {
+            width: 1000px;
+            height: 500px;
+            float: left;
+            position: relative;
+        }
+
+        @keyframes animatE {
+            0% {
+                left: 0px;
+            }
+
+            20% {
+                left: 0px;
+            }
+
+            25% {
+                left: -1000px;
+            }
+
+            40% {
+                left: -1000px;
+            }
+
+            45% {
+                left: -2000px;
+            }
+
+            60% {
+                left: -2000px;
+            }
+
+            65% {
+                left: -3000px;
+            }
+
+            80% {
+                left: -3000px;
+            }
+
+            85% {
+                left: - 4000px;
+            }
+
+            100% {
+                left: -4000px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Header">
+        <h2>Flex box</h2>
+    </div>
+
+    <div class="NavBar">
+        <a href="/2_REGISTER-FORM.HTML">REGISTER-FORM</a>
+        <a href="/1_class.html">Class</a>
+        <a href="/certificate.html">Certificate</a>
+       
+    </div>
+    <div class="row">
+
+        <!-- --------------------------------------------MAIN-WEBSITE-CODE-BELOW--------------------------------------------------------------- -->
+
+        <div class="aboutContent">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Fast-furious-logo-fast-furious.png/250px-Fast-furious-logo-fast-furious.png"
+                style="width: 310px; height:70px ;margin: 10px;" alt="">
+            <h2 align="center" style="font-family: cursive;">Dominic Toretto</h2>
+            <a href="https://www.bmw.in/en/index.html">
+                <img src="https://www.motorbiscuit.com/wp-content/uploads/2021/10/Vin-Diesel-and-a-1970-Charger-500-Universal.jpeg"
+                    style="height: 200px; padding: 10px; margin: 10px; width: 310px;">
+            </a>
+            <p
+                style="padding: 10px; margin: 10px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large;">
+                The 1970 Dodge Charger R/T was kept inside the garage of the Toretto House, was built by Dominic and his
+                father in his youth. When his father was killed in a stock race accident by Kenny Linder, Dominic
+                refused to drive the Charger because he was afraid of it.</p>
+            <h1 align="center">More Text</h1>
+            <p
+                style="padding: 10px; margin: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large;">
+                Lorem ipsum dolor sit amet.</p>
+            <div class="aboutImg"><img
+                    src="https://www.w3docs.com/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg"
+                    style="height: 60px; width: 310px; padding: 10px;margin: 10px;" alt=""></div><br>
+            <div class="aboutImg"><img
+                    src="https://www.w3docs.com/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg"
+                    style="height: 60px; width: 310px; padding: 10px;margin: 10px;" alt=""></div><br>
+            <div class="aboutImg"><img
+                    src="https://www.w3docs.com/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg"
+                    style="height: 60px; width: 310px; padding: 10px;margin: 10px;" alt=""></div>
+        </div>
+
+        <div class="mainContent">
+            <!-- --------------------------------CODE-FOR-SLIDE-SHOW-BELOW------------------------------------------------- -->
+            <h1 style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">DODGE CAHARGER
+            </h1><br>
+            <h3  h3 style="font-family: cursive;">Second Generation(1968-1970)</h3>
+            <div class="slideShow">
+                <section class="section">
+                    <img src="https://www.tuningblog.eu/wp-content/uploads/2022/02/Dodge-Charger-1970-Widebody-Tuningblog.jpg?ezimgfmt=ngcb2/notWebP"
+                        height="500px" width="1000px" alt="">
+                    <img src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/2022/11/1970-Dodge-Charger-RT-Six-Pack----Mecum.jpg?q=50&fit=crop&w=767&dpr=1.5   "
+                        height="500px" width="1000px" alt="">
+                    <img src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/2022/11/1970-Dodge-Charger-RT----Mecum.jpg?q=50&fit=crop&w=767&dpr=1.5"
+                        height="500px" width="1000px" alt="">
+                    <img src="https://www.motortrend.com/uploads/sites/21/2011/02/mopp-1104-08-o-1970-dodge-challenger-rt-driver-side-front-rolling.jpg"
+                        height="500px" width="1000px" alt="">
+                    <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700254107.jpg"
+                        height="500px" width="1000px" alt="">
+                </section>
+            </div> <br>
+
+
+
+            <p
+                style="font-size: x-large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;">
+                ABOUT DODGE:-</p>
+            <p
+                style="font-size: x-large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;">
+                The fall of 1969 was an exciting time for Dodge Charger fans. The 1970 model was a part of the coveted
+                second generation, but it had its own unique styling and appearance that made it stand out from the
+                other two years of the group. Maybe this is why it is chosen to be the Charger that many collectors and
+                muscle car buffs search for, or perhaps it was the R/T car that came with the biggest motors Dodge had
+                in production. Either way, there is no doubt that the 1970 Dodge Charger is a car that many honor, with
+                only a few that have the privilege of driving them. Let's take a look at some of the things that may
+                have been forgotten, so this amazing car can be brought back to life in hearts and souls worldwide.
+            </p>
+            <h1 style=" font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">DOMINIC
+                TORETTO CHARGER </h1>
+            <div class="mainImage"><img
+                    src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/2022/11/1970-Dodge-Charger-RT-Se----Mecum2.jpg?q=50&fit=crop&w=750&dpr=1.5"
+                    style="height: 350px; width:700px" alt=""></div>
+            <p
+                style="font-size: x-large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                The most famous Dodge Charger of all time is arguably the beautiful black 1970 that Dom in Fast and
+                Furious had stashed away in his garage, finally using it to catch some bandits on motorcycles. Ending
+                with a dramatic wreck that leaves the Charger totaled, it is one of the most exciting car chase, racing,
+                and crashing scenes that can be found in any movie. The car may not have been a considerable part of the
+                movie like the tuners that the street racing world loves, but its appearance in the storyline can never
+                be forgotten, propelling the 1970 Dodge Charger into stardom forever.</p><br>
+            <h1 style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Mid-Engine
+                Dodge Charger</h1>
+            <div class="mainImage"><img
+                    src="https://hips.hearstapps.com/hmg-prod/images/2519-d056-00407-1621970643.jpg?crop=1xw:0.9160750779821447xh;center,top&resize=980:*"
+                    style="height: 350px; width:700px" alt=""></div>
+            <p
+                style="font-size: x-large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Dominic Toretto (Vin Diesel) is known for his affinity for Mopar, and throughout the series we've seen
+                him drive plenty of Dodge Chargers. McCarthy says that with each iteration of Dom's whips, they need to
+                do something they haven't done—just as the films themselves have escalated over the years. Speedkore, a
+                Wisconsin-based custom car shop, helped build this mid-engine Hellcat supercharged 6.2-liter V-8–powered
+                1968 Charger, and it cost over $1 million. Two cars were built with Hellcat engines, but the stunt cars
+                are powered by LS3 crate motors with plastic molds of the Hellcat's supercharger on top.
+            </p>
+            <h1 style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Dodge Charger
+                SRT Hellcat</h1>
+            <div class="mainImage"><img
+                    src="https://www.cnet.com/a/img/resize/116e1407d45a721c97e88e76a853e6f46e8a32e6/hub/2020/10/20/a9f8ebb8-9a43-4d24-9347-f04913ae11f6/2020-dodge-charger-srt-hellcat-widebody-ogi-1.jpg?auto=webp&fit=crop&height=675&width=1200"
+                    style="height: 350px; width:700px" alt=""></div>
+            <p
+                style="font-size: x-large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                McCarthy calls this the Demon Charger. His team transplanted a Challenger SRT Hellcat powertrain into a
+                2016 Charger SRT Hellcat, and it even includes the six-speed manual transmission from the Chally that
+                was never offered on the Charger. It's upgraded with a Magnaflow exhaust, tuned, and has an aftermarket
+                pulley and injectors that help it muscle up over 800 horsepower. It also has the hood and wheels from
+                the Challenger SRT Demon. "It's a car I always thought Dodge should build," McCarthy says, and we
+                couldn't agree more. #SavetheManuals
+            </p>
+            <h1 style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Toyota Supra
+            </h1>
+            <div class="mainImage"><img
+                    src="https://www.topgear.com/sites/default/files/2021/06/Block%20Shot%20-%20Lot%20%23744%20-%201994%20TOYOTA%20SUPRA%20-.jpg?w=976&h=549"
+                    style="height: 350px; width:700px" alt=""></div>
+            <p
+                style="font-size: x-large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                It’s certainly that. This particular Supra has now reached icon status in movie car history, and this
+                particular example was driven by Walker in the first Fast movie. It was used for a number of interior
+                and exterior driving shots, taking a further starring role in the sequel, 2003’s 2 Fast 2 Furious.
+
+                It was originally built by Eddie Paul at The Shark Shop in California, and features a Lamborghini Diablo
+                ‘candy orange’ paintjob, that famous ‘gladiator’ decal running along the side, a Bomex front spoiler and
+                side skirts, a TRD-style bonnet and that whopping, APR aluminium rear wing. 19in motorsport wheels
+                finish off the Supra’s aesthetic.It’s certainly that. This particular Supra has now reached icon status
+                in movie car history, and this particular example was driven by Walker in the first Fast movie. It was
+                used for a number of interior and exterior driving shots, taking a further starring role in the sequel,
+                2003’s 2 Fast 2 Furious.<br>
+                Underneath of course, sits Toyota’s 3.0-litre turbocharged inline six cylinder engine – here matched up
+                to a four-speed automatic – though no mention is made of any modifications. Still fast, though.
+            </p>
+            <h1 style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                Ford Mustang</h1>
+            <div class="mainImage"><img
+                    src="https://www.motorbiscuit.com/wp-content/uploads/2021/10/GettyImages-1340782128.jpg?w=1024&h=584"
+                    style="height: 350px; width:700px" alt=""></div>
+            <p
+                style="font-size: x-large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                The modified blue 2016 Ford Mustang GT350 V8 that Jakob Toretto drives through the streets of downtown
+                Los Angeles..<br>Dom's brother, Jakob Toretto (John Cena), is introduced in Fast 9, and Justin Lin, the
+                director of the
+                franchise, wanted him to drive a Ford Mustang GT equipped with some carbon-fiber body mods. We hate to
+                spoil the realism, but McCarthy told us that during a downhill chase scene (pictured), the cars are
+                Mustang bodies with Polaris RZR 1000s underneath. There will also be flashback scenes that show what
+                Jakob would have driven in the early days. "You get that rivalry going," McCarthy says. "You don't want
+                him in another Dodge."
+            </p>
+            <h1 style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                1970 Dodge Charger Tantrum</h1>
+            <div class="mainImage"><img
+                    src="https://hips.hearstapps.com/hmg-prod/images/2519-d001-00155-1621971169.jpg?crop=1xw:0.9160750779821447xh;center,top&resize=980:*"
+                    style="height: 350px; width:700px" alt=""></div>
+            <p
+                style="font-size: x-large;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Speedkore has helped produce a few cars for the Fast and Furious franchise, including the mid-engine
+                Charger and Plymouth Barracuda from Furious 7. The Charger Tantrum has bodywork completed in carbon
+                fiber and HRE wheels.<br>
+                “Tantrum” is the first application of a Mercury Marine engine into a street vehicle. UNder the hood is a
+                90-degree double-overhead-cam V8 displacing 9.0-liters and fed by a pair of 94mm turbochargers. Total
+                output is 1,650 horsepower on 110 Octaine.
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

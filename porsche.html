@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .mainContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .NavBar {
+        display: flex;
+        height: 105px;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    #navlogo {
+        height: 105px;
+        width: 300px;
+    }
+
+    .container {
+        width: 100%;
+        height: 650px;
+        overflow: hidden;
+    }
+
+    section>a>img {
+        width: 1686px;
+        height: 650px;
+        position: relative;
+        top: 0;
+        /* Added 'top: 0' to position images at the top */
+        left: 0;
+        /* Added 'left: 0' to position images at the left */
+    }
+
+    .container>section {
+        height: 650px;
+        width: 7750px;
+        /* Changed '6720px' to '100%' */
+        position: relative;
+        transform: none;
+        animation: animate 15s infinite alternate ease-in-out;
+    }
+
+    @keyframes animate {
+        0% {
+            left: 0%;
+        }
+
+        25% {
+            left: 0%;
+        }
+
+        35% {
+            left: -1686px;
+            /* Updated to match the desired screen width */
+        }
+
+        50% {
+            left: -1686px
+                /* Updated to match the desired screen width */
+        }
+
+        60% {
+            left: -3372px
+                /* Updated to match the desired screen width */
+        }
+
+        75% {
+            left: -3372px;
+            /* Updated to match the desired screen width */
+        }
+
+        85% {
+            left: -5058px;
+            /* Updated to match the desired screen width */
+        }
+
+        100% {
+            left: -5058px;
+            /* Updated to match the desired screen width */
+        }
+    }
+
+    .downImages {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .findPorsche {
+        display: flex;
+        margin-left: 7%;
+
+    }
+
+    .Images {
+        width: 562px;
+        height: 380px;
+
+    }
+
+    .heading {
+        font-size: x-large;
+        position: absolute;
+        color: white;
+        padding-top: 15px;
+
+    }
+
+    .heading1 {
+        padding-left: 30px;
+        font-family: sans-serif;
+    }
+
+    .heading2 {
+        padding-left: 602px;
+        font-family: sans-serif;
+    }
+
+    .heading3 {
+        padding-left: 1162px;
+        font-family: sans-serif;
+    }
+
+    p {
+        font-size: x-large;
+        font-family: sans-serif;
+
+
+    }
+
+    .links {
+        display: flex;
+        text-decoration: none;
+        margin-top: 22%;
+        position: absolute;
+        background-color: aliceblue;
+        width: 20%;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links:hover {
+        background-color: red;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .material-symbols-outlined {
+        color: black;
+        width: 29px;
+    }
+
+    .findPorscheLink1 {
+        background-color: #333333;
+        height: 55px;
+        width: 15%;
+        display: flex;
+        position: absolute;
+        margin-top: 17%;
+        margin-left: 7%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .findPorscheLink2 {
+        background-color: #333333;
+        height: 55px;
+        width: 15%;
+        display: flex;
+        position: absolute;
+        margin-top: 17%;
+        margin-left: 36%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .findPorscheLink3 {
+        background-color: #333333;
+        height: 55px;
+        width: 15%;
+        display: flex;
+        position: absolute;
+        margin-top: 17%;
+        margin-left: 64%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .link {
+        background-color: black;
+        height: 55px;
+        width: 71%;
+    }
+
+    .findPorscheLink3 :hover {
+        background-color: red;
+    }
+
+
+    .two {
+        color: aliceblue;
+        /* this is for icon in findPorsche we make second class because it does not taking any change in the class name   */
+        width: 25px;
+        font-size: 19px;
+    }
+
+    .findPorschePara>a {
+
+        font-size: smaller;
+        color: white;
+    }
+
+    .shoppingTools {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shoppingToolsImages {
+        display: flex;
+        margin-left: 7%;
+        height: 100px;
+    }
+
+    .shoppingToolsLinks {
+        font-size: x-large;
+        position: absolute;
+        color: white;
+        padding-top: 22%;
+
+    }
+
+    .shoppingToolsLinks1 {
+        padding-left: 85px;
+        font-family: sans-serif;
+    }
+
+    .shoppingToolsLinks2 {
+        padding-left: 636px;
+        font-family: sans-serif;
+    }
+
+    .shoppingToolsLinks3 {
+        padding-left: 947px;
+        font-family: sans-serif;
+    }
+
+    .shoppingToolsLinks4 {
+        padding-left: 1226px;
+        font-family: sans-serif;
+    }
+
+    .linkShopping {
+        display: flex;
+        text-decoration: none;
+        margin-top: 22%;
+        position: absolute;
+        /* color: aliceblue; we use this color in inline css  */
+        width: 20%;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linkShopping:hover {
+        color: red;
+    }
+
+
+    .porscheSocialImages {
+        display: grid;
+        display: grid;
+        grid-template-columns: 235px 235px 235px 235px 235px 235px 235px 235px 235px;
+        height: 500px;
+        width: 71%;
+        margin-left: 7%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .item1 {
+        grid-row: 1/ span 3;
+        grid-column: 1/ span 2;
+
+    }
+
+    .item4 {
+        grid-column: 5;
+
+        grid-row: 1/span 3;
+        grid-column: 5/span 2;
+
+    }
+
+    .item5 {
+        grid-column: 3/ span 2;
+        grid-row: 2 /span 3;
+
+    }
+
+    .item6 {
+        grid-column: 1;
+
+    }
+
+    .item7 {
+        grid-column: 2;
+
+
+    }
+
+    .item8 {
+        grid-column: 5;
+
+    }
+
+    .discovery {
+        display: flex;
+
+    }
+
+    .discoveryImages {
+        margin-top: 415px;
+        position: absolute;
+        margin-left: 7%;
+        display: flex;
+
+    }
+
+    .discoveryLinks {
+        font-size: x-large;
+        position: absolute;
+        color: black;
+        padding-top: 445px;
+
+    }
+
+    .discoveryLinks1 {
+        padding-left: 100px;
+        font-family: sans-serif;
+    }
+
+    .discoveryLinks2 {
+        padding-left: 425px;
+        font-family: sans-serif;
+    }
+
+    .discoveryLinks3 {
+        padding-left: 793px;
+        font-family: sans-serif;
+    }
+
+    .discoveryLinks4 {
+        padding-left: 1210px;
+        font-family: sans-serif;
+    }
+
+    .linksDiscovery {
+        display: flex;
+        text-decoration: none;
+        margin-top: 22%;
+        position: absolute;
+        /* color: aliceblue; we use this color in inline css  */
+        width: 24%;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .three {
+        color: red;
+        width: 25px;
+
+        font-size: 19px;
+    }
+
+    .discoveryPara {
+        font-size: large;
+    }
+
+    .footer1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 7%;
+
+    }
+
+    .buildFind {
+        display: flex;
+        flex-direction: column;
+
+        line-height: 50px;
+
+
+    }
+
+    .onlineServices {
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+
+    }
+
+    .behindTheScene {
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+
+    }
+
+    .porcheCompany {
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+
+    }
+
+    .footer1para {
+        font-size: large;
+    }
+
+    .sharePage {
+        margin-top: 15%;
+        height: 65px;
+        background-color: #333333;
+        font-size: larger;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .connectPorche {
+        height: 130px;
+        display: flex;
+    }
+
+    .footer2 {
+        height: 370px;
+        background-color: #282626;
+
+    }
+
+    .footer2content {
+
+        margin-left: 7%;
+        margin-top: 2%;
+    }
+
+    .selectRegion {
+        margin-top: 2%;
+        width: 335px;
+        height: 65px;
+        background-color: #333333;
+        font-size: larger;
+        color: white;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        padding-left: 2%;
+    }
+
+    .CountryRegion {
+        display: flex;
+        flex-direction: row;
+
+    }
+</style>
+
+<body>
+    <div class="mainContent">
+        <nav class="NavBar">
+            <div class="logo">
+                <img id="navlogo"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY08uCEh03UBU5c3U5WA90b3nHTGusjXzZ4SJ2wVIxbWH2-SHsoP57ihF6NtsookzQ_Q&usqp=CAU"
+                    alt="">
+
+            </div>
+        </nav>
+        <div class="container">
+
+            <section class="section">
+                <a href="https://www.porsche.com/middle-east/_india_/aboutporsche/75years/"> <img
+                        src="https://files.porsche.com/filestore/image/multimedia/none/rd-2023-homepage-banner-ww-75jahre-kw06/normal/e6d8d6f8-a2f4-11ed-80f9-005056bbdc38;sM;twebp/porsche-normal.webp"
+                        alt=""></a>
+                <a href="https://dealer.porsche.com/in/india/"> <img
+                        src="https://files.porsche.com/filestore/image/middle-east/none/homepage-banner-india/normal/c2e54b1f-9285-11e9-80c4-005056bbdc38;sM;twebp/porsche-normal.webp"
+                        alt=""></a>
+                <a href="https://motorsports.porsche.com/international/en/article/2023/05/26/wec-preview-le-mans"> <img
+                        src="https://files.porsche.com/filestore/image/multimedia/none/RD-2023-Homepage-Banner-WW-Announcementof24hLeMans-KW22/normal/f80c118d-fae7-11ed-8103-005056bbdc38;sM;twebp/porsche-normal.webp"
+                        alt=""></a>
+                <a href="https://www.porsche.com/middle-east/_india_/models/911/911-models/carrera-cabriolet/"> <img
+                        src="https://files.porsche.com/filestore/image/multimedia/none/RD-2023-Homepage-Banner-WW-TaycanPushGTS-KW19/normal/142eda67-f30b-11ed-8103-005056bbdc38;sM;twebp/porsche-normal.webp"
+                        alt=""></a>
+
+            </section>
+
+        </div>
+
+        <h1
+            style="font-size:xx-large;font-family: sans-serif;margin-top: 30px; margin-bottom: 30px; padding-left:130px;   font-size: 45px;">
+            Models</h1>
+
+        <div class="downImages">
+
+            <img class="Images"
+                src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/57ad32c8-ca23-11ec-80ef-005056bbdc38;sN;twebp;c892;gc/porsche-small.webp"
+                alt="Image 1">
+
+            <img class="Images"
+                src="   https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-911/small/3cf76e8c-6694-11e9-80c4-005056bbdc38;sQ;twebp;c1693;gc/porsche-small.webp"
+                alt="Image 1">
+
+            <img class="Images"
+                src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-taycan/small/094d1c1c-bab0-11e9-80c4-005056bbdc38;sQ;twebp;c1693;gc/porsche-small.webp"
+                alt="Image 1">
+
+
+
+            <div class="heading ">
+
+                <div class="heading1">
+                    <h1 style="position: absolute;">718<br>
+                    </h1>
+                    <p style="position: absolute; margin-top: 55px;">from INR 14,772,000</p>
+                    <div class="links">
+                        <p> <span class="material-symbols-outlined">
+                                bubble
+                            </span>
+                            <a href="https://www.porsche.com/middle-east/_india_/modelstart/all/?modelrange=718">Build
+                                Your Own</a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="heading2">
+                    <h1 style="position: absolute;">911<br>
+                    </h1>
+                    <p style="position: absolute; margin-top: 55px;">from INR 18,646,000</p>
+                    <div class="links">
+                        <p> <span class="material-symbols-outlined">
+                                bubble
+                            </span>
+                            <a href="https://www.porsche.com/middle-east/_india_/modelstart/all/?modelrange=911">Build
+                                Your Own</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="heading3">
+                    <h1 style="position: absolute;">Taycan<br>
+
+                    </h1>
+                    <p style="position: absolute; margin-top: 55px; width: 20%;">from INR 18,646,000</p>
+                    <div class="links">
+                        <p> <span class="material-symbols-outlined">
+                                bubble
+                            </span>
+                            <a href="https://www.porsche.com/middle-east/_india_/modelstart/all/?modelrange=taycan">Build
+                                Your Own</a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="downImages">
+            <img class="Images"
+                src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-panamera/small/31077aa2-d337-11ea-80cc-005056bbdc38;sQ;twebp;c1693;gc/porsche-small.webp"
+                alt="Image 1">
+
+            <img class="Images"
+                src="  https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-macan/small/47db3c6d-e3d7-11eb-80d9-005056bbdc38;sN;twebp;c892;gc/porsche-small.webp"
+                alt="Image 1">
+
+            <img class="Images"
+                src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-cayenne/small/2fbf4ab0-ded1-11ed-8101-005056bbdc38;sQ;twebp;c1693;gc/porsche-small.webp"
+                alt="Image 1">
+
+
+
+            <div class="heading">
+
+                <div class="heading1">
+                    <h2 style="position: absolute;">
+                        Panamera<br>
+                    </h2>
+                    <p style="position: absolute; margin-top: 52px;">from INR 15,804,000</p>
+                    <div class="links">
+                        <p> <span class="material-symbols-outlined">
+                                bubble
+                            </span>
+                            <a href="https://www.porsche.com/middle-east/_india_/modelstart/all/?modelrange=panamera">Build
+                                Your Own</a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="heading2">
+                    <h2 style="position: absolute;">
+                        Macan<br>
+                    </h2>
+                    <p style="position: absolute; margin-top: 52px;">from INR 8,806,000</p>
+                    <div class="links">
+                        <p> <span class="material-symbols-outlined">
+                                bubble
+                            </span>
+                            <a href="https://www.porsche.com/middle-east/_india_/modelstart/all/?modelrange=macan">Build
+                                Your Own</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="heading3">
+                    <h2 style="position: absolute;">
+                        Cayenne<br>
+
+                    </h2>
+                    <p style="position: absolute; margin-top: 52px; width: 20%;">from INR 13,561,000</p>
+                    <div class="links">
+                        <p class="findPorschepara"> <span class="material-symbols-outlined">
+                                bubble
+                            </span>
+                            <a href="https://www.porsche.com/middle-east/_india_/modelstart/all/?modelrange=cayenne">Build
+                                Your Own</a>
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div><br>
+        <p style="font-style: italic; font-size:15px; font-family: sans-serif;margin-left :7% ;">* European
+            specifications shown below. Market specific values to be confirmed upon homologation.</p>
+        <h1
+            style="font-size:xx-large;font-family: sans-serif;margin-top: 90px; margin-bottom: 30px; margin-left :7%;   font-size: 45px;">
+            Find a Porsche near you</h1>
+
+        <div class="findPorsche">
+            <a href=""> <img
+                    src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-icc-718/normal/db4be0ec-f8f4-11eb-80db-005056bbdc38;sP;twebp/porsche-normal.webp"
+                    alt=""> </a>
+            <a href=""> <img
+                    src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-icc-911/normal/e7c2070d-f8f4-11eb-80db-005056bbdc38;sP;twebp/porsche-normal.webp"
+                    alt=""> </a>
+            <a href=""> <img
+                    src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-icc-taycan/normal/253ef544-f8f5-11eb-80db-005056bbdc38;sP;twebp/porsche-normal.webp"
+                    alt=""> </a>
+
+
+            <div class="findPorscheLink1">
+                <div class="link2">
+
+                    <p class="findPorschePara"><span class="material-symbols-outlined two">
+                            arrow_forward_ios
+                        </span>
+                        <a href="">Find 718 Models</a>
+                    </p>
+                </div>
+            </div>
+            <div class="findPorscheLink2">
+                <div class="link2">
+
+                    <p class="findPorschePara"><span class="material-symbols-outlined two">
+                            arrow_forward_ios
+                        </span>
+                        <a href="">Find 718 Models</a>
+                    </p>
+                </div>
+            </div>
+            <div class="findPorscheLink3">
+                <div class="link2">
+
+                    <p class="findPorschePara"><span class="material-symbols-outlined two">
+                            arrow_forward_ios
+                        </span>
+                        <a href="">Find 718 Models</a>
+                    </p>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="shoppingTools">
+            <h1
+                style="font-size:xx-large;font-family: sans-serif;margin-top: 210px; margin-bottom: 30px; margin-left :7%;   font-size: 45px;">
+                Shopping Tools</h1>
+            <div class="shoppingToolsImages">
+                <a href=""> <img style="height: 430px; width: 520px;"
+                        src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-shoppingtools-compare/normal/4365f64f-2c10-11e7-9f74-0019999cd470;sO;twebp/porsche-normal.webp"
+                        alt=""> </a>
+                <a href=""> <img style="height: 430px; width: 300px;"
+                        src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-shoppingtools-dealersearch/normal/c365840c-687b-11e7-9717-0019999cd470;sR;twebp/porsche-normal.webp"
+                        alt=""> </a>
+                <a href=""> <img style="height: 430px; width: 300px;"
+                        src="https://files.porsche.com/filestore/image/middle-east/none/homepage-teaser-shoppingtools-pds/normal/94ab936b-9704-11e7-b591-0019999cd470;sR;twebp/porsche-normal.webp"
+                        alt=""> </a>
+                <a href=""> <img style="height: 430px; width: 300px;"
+                        src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-shoppingtools-kontakt/normal/df7cfdaf-9790-11e7-b591-0019999cd470;sR;twebp/porsche-normal.webp"
+                        alt=""> </a>
+            </div><br>
+
+            <div class="shoppingToolsLinks">
+
+                <div class="shoppingToolsLinks1">
+                    <div class="linkShopping">
+                        <p> <span class="material-symbols-outlined two">
+                                arrow_forward_ios
+                            </span>
+                            <a style="color: white;"
+                                href="https://www.porsche.com/middle-east/_india_/modelstart/all/?modelrange=cayenne">Compare</a>
+                    </div>
+                </div>
+                <div class="shoppingToolsLinks2">
+                    <div class="linkShopping">
+                        <p> <span class="material-symbols-outlined two">
+                                arrow_forward_ios
+                            </span>
+                            <a style="color: white;"
+                                href="https://www.porsche.com/middle-east/_india_/modelstart/all/?modelrange=cayenne">Locate
+                                a dealer</a>
+                    </div>
+                </div>
+                <div class="shoppingToolsLinks3">
+                    <div class="linkShopping">
+                        <p> <span class="material-symbols-outlined two">
+                                arrow_forward_ios
+                            </span>
+                            <a style="color: white;"
+                                href="https://www.porsche.com/middle-east/_india_/modelstart/all/?modelrange=cayenne">Porsche
+                                Lifestyle </a>
+                    </div>
+                </div>
+                <div class="shoppingToolsLinks4">
+                    <div class="linkShopping">
+                        <p> <span class="material-symbols-outlined two">
+                                arrow_forward_ios
+                            </span>
+                            <a style="color: white;"
+                                href="https://www.porsche.com/middle-east/_india_/modelstart/all/?modelrange=cayenne">Contact
+                                Us</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div><br>
+
+        <div class="porscheSocial">
+            <h1
+                style="font-size:xx-large;font-family: sans-serif;margin-top: 380px; margin-bottom: 30px; padding-left:7%;   font-size: 45px;">
+                Porsche Social</h1>
+            <div class="porscheSocialImages">
+                <div class="item1"><a href=""><img style="width: 469px; height: 472px;"
+                            src="//d2vykwbochoala.cloudfront.net/t_smart_auto_crop/https://d1sdeqoxcfgxl0.cloudfront.net/images/original/5e7636759002f96b01d0f8358ffba27601875baf38ef71bf75917326.jpeg"
+                            alt=""></a></div>
+                <div class="item2"><a href=""><img style="width: 230px; height: 230px;"
+                            src="//d2vykwbochoala.cloudfront.net/t_smart_auto_crop/https://d1sdeqoxcfgxl0.cloudfront.net/images/original/f938e43c603c9ba99f4b7aa5064387caa54faca80de462f8eb14cd92.jpeg"
+                            alt=""></a></div>
+                <div class="item3"><a href=""><img style="width: 230px; height: 230px;"
+                            src="//d2vykwbochoala.cloudfront.net/t_smart_auto_crop/https://d1sdeqoxcfgxl0.cloudfront.net/images/original/ab748059e15cf230e4a90a1f9dfbb8ce43906d1707bead0bf0b766f1.jpg"
+                            alt=""></a></div>
+                <div class="item4"><a href=""><img style="width: 469px; height: 472px;"
+                            src="//d2vykwbochoala.cloudfront.net/t_smart_auto_crop/https://d1sdeqoxcfgxl0.cloudfront.net/images/original/1ca09cd683e980477314a2c2b37aefe4b38eed90b19fbf8254a47c2a.jpg"
+                            alt=""></a></div>
+                <div class="item5"><a href=""><img style="width: 469px; height: 472px;"
+                            src="//d2vykwbochoala.cloudfront.net/t_smart_auto_crop/https://d1sdeqoxcfgxl0.cloudfront.net/images/original/c978ee0bcb46ecfc7a4da57e11e066e4b6f592c711005663082befe2.jpg"
+                            alt=""></a></div>
+                <div class="item6"><a href=""><img style="width: 230px; height: 230px;"
+                            src="//d2vykwbochoala.cloudfront.net/t_smart_auto_crop/https://d1sdeqoxcfgxl0.cloudfront.net/images/original/081789fbc08ff306bebf041f65767bc5d1bdbc166970c4b9d5a6a134.jpg"
+                            alt=""></a></div>
+                <div class="item7"><a href=""><img style="width: 230px; height: 230px;"
+                            src="//d2vykwbochoala.cloudfront.net/t_smart_auto_crop/https://d1sdeqoxcfgxl0.cloudfront.net/images/original/49bc8ba1faa7bf709a7beeb84b36fdc9dc5eff392106eb79ae272774.jpeg"
+                            alt=""></a></div>
+                <div class="item8"><a href=""><img style="width: 230px; height: 230px;"
+                            src="//d2vykwbochoala.cloudfront.net/t_smart_auto_crop/https://d1sdeqoxcfgxl0.cloudfront.net/images/original/c663e10171162c2278e934555c4266fcfc4a64c20d3b6eab8d19ddc4.jpg"
+                            alt=""></a></div>
+                <div class="item9"><a href=""><img style="width: 230px; height: 230px;"
+                            src="//d2vykwbochoala.cloudfront.net/t_smart_auto_crop/https://d1sdeqoxcfgxl0.cloudfront.net/images/original/ea39d8646b4dd54edc36f244e88515a3d527d60366013ada9afb5f40.jpg"
+                            alt=""></a></div>
+
+            </div>
+        </div><br>
+
+
+        <div class="discovery">
+            <h1
+                style="font-size:xx-large;font-family: sans-serif;margin-top: 325px; margin-bottom: 30px; padding-left:7%;   font-size: 45px;">
+                Discover</h1>
+            <div class="discoveryImages">
+                <a href=""> <img style="height: 300px; width: 360px;"
+                        src="https://files.porsche.com/filestore/image/multimedia/none/rd-2018-homepage-teaser-ww-e-performance-kw12/normal/f7cc8e7c-6599-11e9-80c4-005056bbdc38;sM;twebp/porsche-normal.webp"
+                        alt=""> </a>
+                <a href=""> <img style="height: 300px; width: 360px;"
+                        src="https://files.porsche.com/filestore/image/multimedia/none/rd-2019-homepage-teaser-pof-porschefinder-kw45/normal/f26ec9e6-fb09-11e9-80c6-005056bbdc38;sM;twebp/porsche-normal.webp"
+                        alt=""> </a>
+                <a href=""> <img style="height: 300px; width: 360px;"
+                        src="https://files.porsche.com/filestore/image/multimedia/none/rd-2022-homepage-teaser-ww-pds-porschelifestyle-kw22/normal/585df047-db34-11ec-80ef-005056bbdc38;sM;twebp/porsche-normal.webp"
+                        alt=""> </a>
+                <a href=""> <img style="height: 300px; width: 360px;"
+                        src="https://files.porsche.com/filestore/image/multimedia/none/rd-2017-homepage-teaser-porscheexclusivemanufaktur-kw24/normal/3cbd9b47-4c59-11e7-bfe2-0019999cd470;sM;twebp/porsche-normal.webp"
+                        alt=""> </a>
+            </div><br>
+
+
+            <div class="discoveryLinks">
+
+                <div class="discoveryLinks1">
+                    <div class="linksDiscovery">
+                        <p class="discoveryPara"> <span class="material-symbols-outlined three">
+                                arrow_forward_ios
+                            </span>
+                            <a style="color: black;"
+                                href="https://www.porsche.com/middle-east/_india_/aboutporsche/e-performance/">Porsche
+                                E-Performence.</a>
+                    </div>
+                </div>
+                <div class="discoveryLinks2">
+                    <div class="linksDiscovery">
+                        <p class="discoveryPara"> <span class="material-symbols-outlined three">
+                                arrow_forward_ios
+                            </span>
+                            <a style="color: black;"
+                                href="https://www.porsche.com/countries/porschefinder-middle-east/?cslang=en">Porsche
+                                Finder
+                            </a>
+                    </div>
+                </div>
+                <div class="discoveryLinks3">
+                    <div class="linksDiscovery">
+                        <p class="discoveryPara"> <span class="material-symbols-outlined three">
+                                arrow_forward_ios
+                            </span>
+                            <a style="color: black;"
+                                href="https://www.porsche.com/middle-east/_india_/accessoriesandservice/porschelifestyle/">Porsche
+                                Lifestyle </a>
+                    </div>
+                </div>
+                <div class="discoveryLinks4">
+                    <div class="linksDiscovery">
+                        <p class="discoveryPara"> <span class="material-symbols-outlined three">
+                                arrow_forward_ios
+                            </span>
+                            <a style="color: black;"
+                                href="https://www.porsche.com/middle-east/_india_/accessoriesandservice/exclusive-manufaktur/passion/">Porche
+                                Exclusive Manufakture.</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <hr style="margin-top: 26%; width: 86%; margin-left: 7%;">
+        <div class="footer1">
+
+
+            <div class="buildFind">
+                <h1
+                    style="font-size:xx-large;font-family: sans-serif; width: 100%; margin-top: 35px; margin-bottom: 30px;   font-size: 25px;">
+                    Build Find</h1>
+
+                <p class="footer1para">Build your Porche</p>
+                <p class="footer1para"> Compare Models</p>
+                <p class="footer1para"> Search Pre-Owend</p>
+                <p class="footer1para"> Find your Porche Center</p>
+                <p class="footer1para"> Download the model range catalogue</p>
+
+
+            </div>
+            <div class="onlineServices">
+                <h1
+                    style="font-size:xx-large;font-family: sans-serif;margin-top: 35px; margin-bottom: 30px; width: 100%;   font-size: 25px;">
+                    Online Services</h1>
+
+                <p class="footer1para"> Porsche Login</p>
+                <p class="footer1para"> Sign up for News</p>
+
+
+
+            </div>
+            <div class="behindTheScene">
+                <h1
+                    style="font-size:xx-large;font-family: sans-serif;margin-top: 35px; margin-bottom: 30px; width: 100%;   font-size: 25px;">
+                    behind The Scene
+                </h1>
+
+                <p class="footer1para"> Passion Motorsports</p>
+                <p class="footer1para"> Porsche Experience</p>
+                <p class="footer1para"> Porsche Classic</p>
+                <p class="footer1para"> Visit Porsche Museum</p>
+
+            </div>
+            <div class="porcheCompany">
+                <h1
+                    style="font-size:xx-large;font-family: sans-serif;margin-top: 35px; width: 100%; margin-bottom: 30px;   font-size: 25px;">
+                    Porsche Company</h1>
+
+                <p class="footer1para">Latest News</p>
+                <p class="footer1para">At a Glance</p>
+                <p class="footer1para"> Jobs & Careers</p>
+                <p class="footer1para"> Contact & Information</p>
+                <p class="footer1para">Christophorus - The Porsche Magazine</p>
+
+                <div class="sharePage">
+                    <span style="color: aliceblue; margin-left: 10%; width: 50px; padding-top: 7%;"
+                        class="material-symbols-outlined">
+                        share
+                    </span>Share Page
+                </div>
+
+                <p style="font-family: sans-serif; margin-top: 40px;">Connect With Porsche</p>
+                <div style="margin-top: -7px;" class="connectPorche">
+                    <img style="mix-blend-mode: lighten; width: 60px; height: 60px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQETgvme0inR7PNyyhCdlTkYvh8hZzfc6T5EA&usqp=CAU"
+                        alt="">
+                    <img style="mix-blend-mode: lighten; width: 55px; margin-top: 3px; height: 55px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGHNUjbYJv5jI2ds_oU9glPOWiKzYk8yndg&usqp=CAU"
+                        alt="">
+                    <img style="mix-blend-mode: lighten; width: 64px; margin-top: -1px; height: 64px;"
+                        src="data:image/png;base64,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"
+                        alt="">
+                    <img style="mix-blend-mode: lighten; width: 64px; margin-top: -1px; height: 64px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUdxul6T8MmE7R77rLsUcF0UhPfga8y7Ox2w&usqp=CAU"
+                        alt="">
+                </div>
+
+
+            </div>
+
+            
+        </div>
+        <div class="footer2">
+
+            <div class="footer2content">
+
+
+                <p style="color: white; font-family:sans-serif; font-size: xx-large;"> Change Country/region:</p>
+                <div class="CountryRegion">
+                    <div class="selectRegion">
+                        Share Page<span style="color: aliceblue; padding-left: 55%;" class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                    <div class="selectRegion" style="margin-left:1% ; ">
+                        <p
+                            style="position: absolute; color: #8f9385; width: 200px; font-size:large;font-style:sans-serif;">
+                            Select a country/region</p>
+                        <span style="color:#8f9385; padding-left: 85%;" class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+                <hr style="margin-top: 40px; background-color: #333333; width: 95%">
+                <p style="color: white; font-family: sans-serif; font-size: larger; margin-top: 2%;">© 2023 Porsche
+                    India - SKODA AUTO Volkswagen India Private Limited - India.<a href="#"
+                        style="color: white; text-decoration-line:blink;"> Legal notice</a> . Cookie & Privacy Policy.
+                    Corporate Governance. Open Source Software Notice. Whistleblower System. Business and Human Rights.
+                </p>
+
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>
